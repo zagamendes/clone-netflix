@@ -1,0 +1,12 @@
+footer{
+    background-color: #111;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    
+
+}

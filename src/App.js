@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import getContent from "./utils/tmdb";
+import Home from "./components/telas/home";
+import Login from "./components/telas/login";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const loadContent = async () => {
+    const series = await getContent();
+    console.log(series);
+  };
+  useEffect(() => {
+    loadContent();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route  path="/login" component={Login} />
+      </Switch>
+      </Router>
+    
   );
 }
 

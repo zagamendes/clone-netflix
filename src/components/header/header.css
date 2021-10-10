@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    width: 167px;
+    z-index: 1;
+    fill: #e50914;
+    margin: 40px;
+}
+.ctn-btn-entrar button{
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 77px;
+    height: 32px;
+    font-size: 16px;
+}
+.ctn-btn-entrar button:hover{
+    background-color: #f40612;
+}
+.ctn-btn-entrar{
+    z-index: 1;
+    margin: 40px;
+}
