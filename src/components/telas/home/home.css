@@ -1,180 +1,130 @@
-.ctn-img-form{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    border-bottom: 8px solid #222;
-    height: 642px;
-
+.ctn-img-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 8px solid #222;
+  height: 642px;
 }
-.ctn-background{
-    width: 100%;
-    position: absolute;
-    height: 742px;
-    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 50%,rgba(0,0,0,.8) 100%);
-    top: -100px;
+.ctn-background {
+  width: 100%;
+  position: absolute;
+  height: 742px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  top: -100px;
 }
-.ctn-background-img{
-    position: absolute;
-    z-index: -1;
+.ctn-background-img {
+  position: absolute;
+  z-index: -1;
 }
-.ctn-background img{
-    width: 100%;
+.ctn-background img {
+  width: 100%;
 }
-.main-container{
-    
-    width: 100%;
+.main-container {
+  width: 100%;
 }
-.ctn-texto-form{
-    color: white;
-    max-width: 950px;
-    text-align: center;
-    font-size: 1.625rem;
-    font-weight: 400;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+.ctn-texto-form {
+  color: white;
+  max-width: 950px;
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
-.ctn-texto-form .filmes-sem-limites{
-    max-width: 750px;
-
+.ctn-texto-form .filmes-sem-limites {
+  max-width: 750px;
 }
-.ctn-texto-form .filmes-sem-limites h1{
-    margin-bottom: 10px;
-    font-size: 64px;
-    
+.ctn-texto-form .filmes-sem-limites h1 {
+  margin-bottom: 10px;
+  font-size: 64px;
 }
-.ctn-texto-form .filmes-sem-limites :nth-child(2){
-    font-size: 28px;
-    margin: 0;
-    margin-bottom: 30px;
+.ctn-texto-form .filmes-sem-limites :nth-child(2) {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 30px;
 }
-.ctn-texto-form p:last-of-type{
-    font-size: 21px;
+.ctn-texto-form p:last-of-type {
+  font-size: 21px;
 }
-.ctn-texto-form input{
-    width: 500px;
-    height: 70px;
-    padding: 10px 10px 0px 10px;
+.ctn-texto-form input {
+  width: 500px;
+  height: 70px;
+  padding: 10px 10px 0px 10px;
 }
-.ctn-texto-form form{
-    display: flex;
-    align-self: center;
+.ctn-texto-form form {
+  display: flex;
+  align-self: center;
 }
-.ctn-texto-form button{
-    width: 211px;
-    background-color: #e50914;
-    color: white;
-    min-height: 70px;
-    cursor: pointer;
-    font-size: 1.875rem !important;
-    border: none;
+.ctn-texto-form button {
+  width: 211px;
+  background-color: #e50914;
+  color: white;
+  min-height: 70px;
+  cursor: pointer;
+  font-size: 1.875rem !important;
+  border: none;
 }
-.ctn-texto-form button:hover{
-    background-color: #f40612;
-}
-
-.main-container section{
-    background-color: black;
-    color: white;
-    padding: 70px 45px;
-    border-bottom: 8px solid #222;
-}
-.container-beneficios section .container{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
-    height: 325px;
-    
-}
-.main-container section .ctn-img img{
-    width: 100%;
-}
-.main-container section .container .ctn-texto h3{
-    font-size: 3.125rem;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-.main-container section .container .ctn-texto p{
-    font-size: 1.625rem;
-    margin-top: 20px;
-    width: 547px;
-}
-.aproveite-na-tv .ctn-img{
-    position: relative;
-    z-index: 0;
-    width: 505px;
-}
-.aproveite-na-tv .ctn-texto{
-    width: 595px;
+.ctn-texto-form button:hover {
+  background-color: #f40612;
 }
 
-.container-beneficios section:first-of-type .ctn-img video{
-    position: absolute;
-    left: 70px;
-    top: 80px;
-    z-index: -1;
-    width: 365px
+.main-container section {
+  background-color: black;
+  color: white;
+  padding: 70px 45px;
+  border-bottom: 8px solid #222;
 }
-.container-beneficios section:last-of-type .ctn-img video{
-    position: absolute;
-    left: 95px;
-    top: 45px;
-    z-index: -1;
-    width: 323px
+.container-beneficios section .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  height: 325px;
 }
-.faq .container{
-    display: flex;
-    width: 815px;
-    margin: 0 auto;
-    flex-direction: column;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+.main-container section .ctn-img img {
+  width: 100%;
 }
-.faq h2{
-    text-align: center;
-    font-size: 50px;
+.main-container section .container .ctn-texto h3 {
+  font-size: 3.125rem;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
-.faq .titulo-pergunta{
-    font-size: 1.625rem;
-    margin: 0;
-    padding: 10px 20px;   
+.main-container section .container .ctn-texto p {
+  font-size: 1.625rem;
+  margin-top: 20px;
+  width: 547px;
 }
-.faq .pergunta{
-    max-height: 50px;
-    overflow: hidden;
-    margin: 0;
-    background-color: #303030;
-    margin-bottom: 10px;
-    cursor: pointer;
+.aproveite-na-tv .ctn-img {
+  position: relative;
+  z-index: 0;
+  width: 505px;
 }
-.ctn-titulo-icon{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;    
+.aproveite-na-tv .ctn-texto {
+  width: 595px;
 }
-.ctn-titulo-icon button{
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 13px 10px 0 10px;
-    cursor: pointer;
-    height:max-content;
-}
-.ctn-titulo-icon svg{
-    width: 30px;
-    fill: white;
-    transform: rotate(45deg);
-}
-.faq .resposta{
-    margin: 0;
-    padding: 1.2em;
-    font-size: 24px;
-}
-.faq .pergunta-aberta{
-    max-height: fit-content;
 
+.container-beneficios section:first-of-type .ctn-img video {
+  position: absolute;
+  left: 70px;
+  top: 80px;
+  z-index: -1;
+  width: 365px;
+}
+.container-beneficios section:last-of-type .ctn-img video {
+  position: absolute;
+  left: 95px;
+  top: 45px;
+  z-index: -1;
+  width: 323px;
 }

@@ -53,6 +53,22 @@
   color: white;
   margin-top: 0;
 }
-.form-login{
-    width: 310px;
+.form-login {
+  width: 310px;
+}
+@media (max-width:768px){
+  .container{
+    position: relative;
+  }
+  .container-img{
+    overflow: hidden;
+  }
+  .container-img img{
+    width: auto;
+    
+  }
+  .container-login{
+    width: 100%;
+    height: 100%;
+  }
 }

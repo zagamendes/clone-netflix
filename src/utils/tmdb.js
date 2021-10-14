@@ -7,6 +7,12 @@ async function getData (endPoint){
     const {data} = await axios.get(`${BASE_URL}${endPoint}?with_network=213&language=pt-br&api_key=${API_KEY}`)
     return data
 }
+const getAnimes = async ()=>{
+    const {data} = await axios.get(`${BASE_URL}/discover/tv?language=pt-br&api_key=${API_KEY}&with_original_language=ja`)
+    console.log(data);
+    return data
+
+}
 
 const getContent = async ()=>(
     [
@@ -17,14 +23,24 @@ const getContent = async ()=>(
         },
         {
             slug:"trending",
-            title:"Originais da Netflix",
+            title:"Recomendando para você",
             content:await getData("/trending/all/week")
         },
         {
             slug:"toprated",
-            title:"Em altta",
+            title:"Em alta",
             content:await getData("/movie/top_rated")
+        },
+        {
+            slug:"Anime",
+            title:"Animes",
+            content:await getAnimes()
         }
     ]
 )
 export default getContent
+
+
+export const getSerieInfo = async(id)=>axios.get(`${BASE_URL}/tv/${id}?language=pt-br&api_key=${API_KEY}`)
+    
+export const getVideo = async(id,tipo)=>axios.get(`${BASE_URL}/${tipo}/${id}/videos?language=pt-br&api_key=${API_KEY}`)

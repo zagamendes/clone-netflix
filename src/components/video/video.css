@@ -1,0 +1,26 @@
+.browse-ctn-video{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+
+}
+.browse-ctn-video iframe{
+    width: 100%;
+    height: 100%;
+}
+.close-video{
+    color: white;
+    position: absolute;
+    fill: white;
+    width: 32px;
+    right: 40px;
+    top: 65px;
+    position: absolute;
+    cursor: pointer;
+    transition: all .2s;
+}
+.close-video:hover{
+    transform: scale(1.5);
+}

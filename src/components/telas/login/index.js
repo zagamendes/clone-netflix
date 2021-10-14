@@ -11,9 +11,8 @@ const Login = () => {
   console.log(email, senha);
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-      history.push("/browse")
-    
+
+    history.push("/browse");
   };
   return (
     <>

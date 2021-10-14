@@ -1,15 +1,8 @@
-.header-browse{
+header{
     display: flex;
     justify-content: space-between;
     height: 100px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    transition: all .2s;
-    z-index: 1;
-}
-.black-header{
-    background-color: #141414;
 }
 .logo{
     width: 167px;

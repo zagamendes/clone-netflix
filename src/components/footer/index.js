@@ -3,9 +3,9 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer>
-      <p>Feito por Izaac Mendes</p>
-      <p>Dados retirados do TMBD</p>
-      <p>Direitos de imagens da NETFLIX</p>
+      <p>Feito por Izaac Mendes🤓</p>
+      <p>Dados retirados do TMBD💾</p>
+      <p>Direitos de imagens da NETFLIX💖</p>
     </footer>
   );
 };

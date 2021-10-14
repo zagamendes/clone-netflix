@@ -1,0 +1,37 @@
+.ctn-browse {
+  background-color: #111;
+}
+.browse-loading {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+.browse-loading img {
+  width: auto;
+}
+@media (max-width: 768px) {
+  .browse-loading{
+    justify-content: flex-start;
+  }
+  .featured-info {
+    font-size: 9px !important;
+  }
+  .featured-descricao {
+    font-size: 16px !important;
+  }
+  .featured-nome h2{
+      font-size: 30px !important;
+  }
+  .btn-assistir,.btn-minha-lista{
+      font-size: 18px !important;
+      padding: 6px 40px !important;
+      margin-right: 20px;
+  }
+  
+  
+}
+

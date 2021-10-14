@@ -1,0 +1,117 @@
+.faq .container {
+  display: flex;
+  width: 815px;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: auto;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.faq .titulo-pergunta {
+  font-size: 1.625rem;
+  margin: 0;
+  padding: 10px 20px;
+}
+.faq .pergunta {
+  max-height: 50px;
+  overflow: hidden;
+  margin: 0;
+  background-color: #303030;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.ctn-titulo-icon {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.ctn-titulo-icon button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 13px 10px 0 10px;
+  cursor: pointer;
+  height: max-content;
+}
+.ctn-titulo-icon svg {
+  width: 30px;
+  fill: white;
+  transform: rotate(45deg);
+}
+.faq .resposta {
+  margin: 0;
+  padding: 1.2em;
+  font-size: 24px;
+}
+.faq .pergunta-aberta {
+  max-height: fit-content;
+}
+@media (max-width: 768px) {
+  .ctn-background {
+    height: 420px;
+    overflow: hidden;
+  }
+  .faq .container {
+    width: auto;
+  }
+  .ctn-texto-form .filmes-sem-limites h1 {
+    font-size: 29px;
+  }
+  .ctn-img-form {
+    height: 320px;
+  }
+  .main-container section {
+    padding: 25px 20px;
+  }
+  .container-beneficios section .container {
+    height: 400px;
+  }
+  .main-container section .container .ctn-texto h3 {
+    font-size: 1.3rem;
+  }
+  .aproveite-na-tv .container {
+    flex-direction: column;
+  }
+  .container-beneficios section:first-of-type .ctn-img video {
+    left: 43px;
+    top: 50px;
+    width: 246px;
+  }
+  .ctn-texto-form .filmes-sem-limites :nth-child(2) {
+    width: 290px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .ctn-texto-form p:last-of-type {
+    font-size: 19px;
+    width: 320px;
+    margin: 10px auto;
+  }
+  .ctn-background img {
+    width: auto;
+  }
+  .aproveite-na-tv .ctn-texto {
+    width: inherit;
+  }
+  .aproveite-na-tv .ctn-img {
+    width: auto;
+  }
+  .main-container section .container .ctn-texto p {
+    width: auto;
+    font-size: 18px;
+  }
+  .faq .titulo-pergunta {
+    font-size: 20px;
+  }
+  .faq .resposta {
+    font-size: 17px;
+  }
+  .container-beneficios section:last-of-type .ctn-img video {
+    left: 55px;
+    top: 30px;
+    width: 220px;
+  }
+}
