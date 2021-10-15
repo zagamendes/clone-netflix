@@ -73,6 +73,9 @@
   cursor: pointer;
   font-size: 1.875rem !important;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 .ctn-texto-form button:hover {
   background-color: #f40612;

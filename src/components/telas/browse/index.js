@@ -6,8 +6,12 @@ import FeaturedSerie from "../../serie em destaque";
 import Header from "../../header";
 import Footer from "../../footer";
 import Video from "../../video";
+import { useHistory } from "react-router-dom";
+import isLogged from "../../../utils/auth";
 export const MyContext = React.createContext("");
 const Browse = () => {
+  const history = useHistory()
+  !isLogged() && history.push("/") 
   const [lista, setLista] = useState([]);
   const [blackHeader, setBlackHeader] = useState(false);
   const [featuredSerie, setFeaturedSerie] = useState("");
@@ -46,9 +50,7 @@ const Browse = () => {
     </div>
   ) : (
     <div className="ctn-browse">
-      <MyContext.Provider
-        value={{ openVideo: openVideo, setVideoInfo: setVideoInfo }}
-      >
+      <MyContext.Provider value={{ openVideo, setVideoInfo }}>
         {videoInfo.key ? <Video id={videoInfo.key} /> : ""}
         <Header isBlack={blackHeader} />
         <FeaturedSerie serie={featuredSerie} />

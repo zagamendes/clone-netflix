@@ -1,0 +1,25 @@
+.signup-container .ctn-texto-form {
+    width: 500px;
+    margin: 0 auto;
+
+}
+.signup-container .ctn-texto-form form{
+    flex-direction: column;
+    align-self: baseline;
+    width: 100%;
+}
+.signup-container .ctn-texto-form form button{
+    width: 100%;
+    min-height:auto;
+    padding: 10px;
+}
+.signup-container .ctn-texto{
+    color: black;
+    text-align: left
+}
+.signup-container .ctn-texto-form input {
+    width: auto;
+    height: 40px;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 20px;
+}

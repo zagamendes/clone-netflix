@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import bgLarge from "../../../img/bg-large.jpg";
 import bgMedium from "../../../img/bg-medium.jpg";
@@ -6,12 +6,21 @@ import bgSmall from "../../../img/bg-small.jpg";
 import tv from "../../../img/tv.png";
 import baixeSeries from "../../../img/baixe-series.jpg";
 import assistaQuandoQuiser from "../../../img/assista-quando-quiser.png";
-import { ReactComponent as PlusIcon } from "../../../img/plus-icon.svg";
 import Header from "./header";
 import Footer from "../../footer";
 import Faq from "../../faq";
-
+import NavigateNextIcon from "@material-ui/icons//NavigateNext";
+import { usuarioContext } from "../../../utils/contexto";
+import { useHistory } from "react-router-dom";
+import isLogged from "../../../utils/auth"
 const Home = () => {
+  const { user, setUser } = useContext(usuarioContext);
+  const history = useHistory();
+  isLogged() && history.push("/browse")
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push("/signup");
+  };
   return (
     <>
       <Header />
@@ -34,6 +43,19 @@ const Home = () => {
                 sua assinatura.
               </p>
             </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                required
+                placeholder="Seu email"
+                onChange={({ target }) =>
+                  setUser({ ...user, email: target.value })
+                }
+              />
+              <button>
+                Vamos lá <NavigateNextIcon />{" "}
+              </button>
+            </form>
           </div>
         </div>
         <div className="container-beneficios">

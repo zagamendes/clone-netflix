@@ -3,6 +3,7 @@ header{
     justify-content: space-between;
     height: 100px;
     width: 100%;
+    cursor: pointer;
 }
 .logo{
     width: 167px;

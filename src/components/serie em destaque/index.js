@@ -36,7 +36,7 @@ const FeaturedSerie = ({ serie }) => {
             <div className="featured-descricao">
               {window.innerWidth < 768
                 ? serie.overview.substring(0, 150) + "..."
-                : serie.overview}
+                : serie.overview.substring(0, 220) + "..."}
             </div>
             <div className="featured-buttons">
               <button className="btn-assistir" onClick={() => openVideo(serie)}>

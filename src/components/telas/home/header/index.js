@@ -1,13 +1,14 @@
 import React from "react";
 import './header.css'
 import {ReactComponent as Logo} from '../../../../img/logo.svg'
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 
 
 const Header = () => {
+  const history = useHistory()
   return (
     <header>
-      <div className="logo">
+      <div className="logo" onClick={()=>history.push('/')}>
         <Logo />
       </div>
       <div className="ctn-btn-entrar">
