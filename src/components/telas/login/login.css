@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .container-img img {
   width: 100%;
@@ -39,6 +40,7 @@
   border: none;
   height: 30px;
   color: white;
+  outline: none;
   margin-bottom: 20px;
 }
 .container-login button {
@@ -48,6 +50,16 @@
   margin: 0 auto;
   padding: 10px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-login button .MuiSvgIcon-root{
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  from {transform: rotate(0deg)}
+  to {transform:rotate(360deg)}
 }
 .container-login h2 {
   color: white;
@@ -69,6 +81,8 @@
   }
   .container-login{
     width: 100%;
-    height: 100%;
+    height: 400px;
+    background-color: black;
   }
+  
 }

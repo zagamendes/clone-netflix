@@ -32,4 +32,18 @@
 .ctn-btn-entrar{
     z-index: 1;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logout{
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition:all .3s;
+}
+.ctn-btn-entrar:hover .logout{
+    opacity: 1;
 }

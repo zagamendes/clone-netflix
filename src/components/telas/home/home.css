@@ -75,7 +75,7 @@
   border: none;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 .ctn-texto-form button:hover {
   background-color: #f40612;
@@ -130,4 +130,18 @@
   top: 45px;
   z-index: -1;
   width: 323px;
+}
+
+@media (max-width: 768px) {
+  .ctn-texto-form input {
+    width: 200px;
+    height: 30px;
+  }
+  .ctn-texto-form button {
+    width: 100px;
+    min-height: 30px;
+    font-size: 12px !important;
+}
+  
+
 }
